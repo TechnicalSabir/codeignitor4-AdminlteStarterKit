@@ -1,0 +1,45 @@
+CRITICAL - 2023-08-30 07:54:56 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App/Controllers\Home::index"
+in SYSTEMPATH/Router/Router.php on line 477.
+ 1 SYSTEMPATH/Router/Router.php(477): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName()
+ 2 SYSTEMPATH/Router/Router.php(184): CodeIgniter\Router\Router->checkRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(796): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/acer/Tech-data/MyTech/ReactNative/Projects/codeignitor_backend/public/index.php')
+ERROR - 2023-08-30 08:54:47 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/project/prc_zigwheels_backend/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT * from b...', 0)
+#1 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from b...')
+#2 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from b...')
+#3 /opt/lampp/htdocs/project/prc_zigwheels_backend/app/Controllers/Api.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * from b...')
+#4 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/CodeIgniter.php(915): App\Controllers\Api->brands()
+#5 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#6 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/project/prc_zigwheels_backend/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-30 08:54:47 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 APPPATH/Controllers/Api.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * from brands')
+ 2 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\Api->brands()
+ 3 SYSTEMPATH/CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-30 08:56:12 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/project/prc_zigwheels_backend/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT * from b...', 0)
+#1 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * from b...')
+#2 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * from b...')
+#3 /opt/lampp/htdocs/project/prc_zigwheels_backend/app/Controllers/Api.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * from b...')
+#4 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/CodeIgniter.php(915): App\Controllers\Api->brands()
+#5 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#6 /opt/lampp/htdocs/project/prc_zigwheels_backend/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/project/prc_zigwheels_backend/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-30 08:56:12 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 APPPATH/Controllers/Api.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * from brands')
+ 2 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\Api->brands()
+ 3 SYSTEMPATH/CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

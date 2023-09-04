@@ -1,0 +1,62 @@
+CRITICAL - 2023-09-04 07:04:19 --> include(&lt;!-- DEBUG-VIEW START 1 APPPATH/Views/includes/header.php --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://...@yield('title') | {{env('APP_NAME')}}&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;sidebar-mini layout-fixed&quot;&gt;
+    &lt;div class=&quot;preloader flex-column justify-content-center align-items-center&quot;&gt;
+        &lt;img class=&quot;animation__shake&quot; src=&quot;dist/img/AdminLTELogo.png&quot; alt=&quot;AdminLTELogo&quot; height=&quot;60&quot; width=&quot;60&quot;&gt;
+    &lt;/div&gt;
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH/Views/includes/header.php --&gt;
+): failed to open stream: No such file or directory
+in APPPATH/Views/welcome_message.php on line 1.
+ 1 APPPATH/Views/welcome_message.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(&lt;!-- DEBUG-VIEW START 1 APPPATH/Views/includes/header.php --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://...@yield(\'title\') | {{env(\'APP_NAME\')}}&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;sidebar-mini layout-fixed&quot;&gt;
+    &lt;div class=&quot;preloader flex-column justify-content-center align-items-center&quot;&gt;
+        &lt;img class=&quot;animation__shake&quot; src=&quot;dist/img/AdminLTELogo.png&quot; alt=&quot;AdminLTELogo&quot; height=&quot;60&quot; width=&quot;60&quot;&gt;
+    &lt;/div&gt;
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH/Views/includes/header.php --&gt;
+): failed to open stream: No such file or directory', '/opt/lampp/htdocs/project/prc_zigwheels_backend/app/Views/welcome_message.php', 1, [])
+ 2 APPPATH/Views/welcome_message.php(1): include()
+ 3 SYSTEMPATH/View/View.php(226): include('/opt/lampp/htdocs/project/prc_zigwheels_backend/app/Views/welcome_message.php')
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('welcome_message', [], true)
+ 6 APPPATH/Controllers/Dashboard.php(7): view('welcome_message')
+ 7 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-04 07:09:57 --> CodeIgniter\View\View::main(): Failed opening required '/opt/lampp/htdocs/project/prc_zigwheels_backend/app/Views/includes/header' (include_path='.:/opt/lampp/lib/php')
+in APPPATH/Views/welcome_message.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-04 07:12:07 --> CodeIgniter\View\View::main(): Failed opening required '/opt/lampp/htdocs/project/prc_zigwheels_backend/app/Views/includesnavbar.php' (include_path='.:/opt/lampp/lib/php')
+in APPPATH/Views/includes/header.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-04 07:12:33 --> CodeIgniter\View\View::main(): Failed opening required '/opt/lampp/htdocs/project/prc_zigwheels_backend/app/Views/includesnavbar.php' (include_path='.:/opt/lampp/lib/php')
+in APPPATH/Views/includes/header.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-04 08:42:31 --> Invalid file: "dashboard.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH/Controllers/Dashboard.php(7): view('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(915): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
